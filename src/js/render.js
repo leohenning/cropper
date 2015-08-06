@@ -20,19 +20,19 @@
       $cropper.addClass(CLASS_HIDDEN);
       $this.removeClass(CLASS_HIDDEN);
 
-      //console.log('container width: ' + $container.width() + '  height:' + $container.height());
+      // console.log('container width: ' + $container.width() + '  height:' + $container.height());
       if (options.maxContainerWidth) {
-        //var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        //$container.width(min(options.maxContainerWidth * w,  $container.width()));
-        //$container.width(options.maxContainerWidth * w);
+        // var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        // $container.width(min(options.maxContainerWidth * w,  $container.width()));
+        // $container.width(options.maxContainerWidth * w);
         $container.width('auto');
       }
 
       if (options.maxContainerHeight) {
         var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        //$container.height(min(options.maxContainerHeight * h,  $container.height()));
+        // $container.height(min(options.maxContainerHeight * h,  $container.height()));
         $container.height(options.maxContainerHeight * h);
-        //$container.height('auto');
+        // $container.height('auto');
       }
 
       $cropper.css((this.container = {
